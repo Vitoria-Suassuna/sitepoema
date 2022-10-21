@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion one', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; tudo maiuscuru*/
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
+}
+header > p{
+    padding-bottom: 50px ;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
+}
+section.normal{
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    box-shadow: inset 3px 3px 12px black;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 5px;
+    text-shadow: 2px 1px 0px rgb(43, 43, 43);
+}
+section#img1{
+background-image: url(../imagem/miss.jpg);
+background-size: 900px 500px;
+}
+section#img2{
+background-image: url(../imagem/boy.jpg);
+
+background-size:  1200px 650px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
